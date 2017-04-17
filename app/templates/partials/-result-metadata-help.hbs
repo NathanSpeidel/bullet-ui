@@ -37,10 +37,10 @@
 
 <h5 class="content-header">Uniques Estimate</h5>
 <p>
-  The <strong>{{settings.defaultValues.uniquesEstimate}}</strong> key is present if you have Grouped Data and the number of unique groups exceeded the maximum number of rows returned (<strong>{{settings.defaultValues.groupSketchEntries}}</strong> by default). If so, the value for the key denotes the approximate number of unique groups there were. You can use the Standard Deviations section as usual to estimate the true range of the estimate. You will have received a uniform sample of these unique groups (with the right values for your metrics) as the result.
+  The <strong>{{settings.defaultValues.metadataKeyMapping.uniquesEstimate}}</strong> key is present if you have Grouped Data and the number of unique groups exceeded the maximum number of rows returned (<strong>{{settings.defaultValues.groupByMaxEntries}}</strong> by default). If so, the value for the key denotes the approximate number of unique groups there were. You can use the Standard Deviations section as usual to estimate the true range of the estimate. You will have received a uniform sample of these unique groups (with the right values for your metrics) as the result.
 </p>
 
 <h5 class="content-header">Sketch Theta</h5>
 <p>
-  <strong>{{settings.defaultValues.theta}}</strong> denotes the theta value of the Sketch that was used underneath to perform a Count Distinct or a Group operation. This is particularly useful if you have Grouped Data and you have more groups than can be returned. If you have performed metrics like Sum or Count, you can add them up over the returned rows in the Result below and divide by this Sketch Theta. The resulting number is an estimate of the Sum or Count across <strong>all</strong> your unique values that could not be returned.
+  <strong>{{settings.defaultValues.metadataKeyMapping.theta}}</strong> denotes the theta value of the Sketch that was used underneath to perform a Count Distinct or a Group operation. This is particularly useful if you have Grouped Data and you have more groups than can be returned. If you have performed metrics like Sum or Count, you can add them up over the returned rows in the Result below and divide by this Sketch Theta. The resulting number is an estimate of the Sum or Count across <strong>all</strong> your unique values that could not be returned.
 </p>
