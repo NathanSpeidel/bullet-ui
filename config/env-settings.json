@@ -21,8 +21,7 @@
       "countDistinctEntries": 16384,
       "theta": "theta",
       "groupSketchEntries": 512,
-      "tickIntervalSecs": 5,
-      "tickTimeout": 3,
+      "queryTimeoutSecs": 3,
       "metadataKeyMapping": {
         "queryCreationTime": "query_receive_time",
         "queryTerminationTime": "query_finish_time",
